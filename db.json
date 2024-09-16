@@ -1,16 +1,16 @@
 [
   {
-    "ref": "c15b0d5e-6813-4342-acaf-386668ded693",
-    "keyword": "49a9d029133a74bd9d86b7b0be317f78",
+    "ref": "eeac4d52-daf4-453a-bdd6-b3f8afd6b62d",
+    "keyword": "afff7e7adb9724a513ccec9e18983cec",
     "answer": "Hola",
     "options": {},
     "from": "51923322922",
     "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
   },
   {
-    "ref": "ans_735f80a3-7d12-4df3-bd1c-5801cb2832a8",
-    "keyword": "key_bbfea5fb-07c8-4bd6-b8dd-f49d11685011",
-    "answer": "🙌 Hola bienvenido a este *Chatbot*",
+    "ref": "ans_cdc21275-b59e-4e78-8122-98c6a3b4e767",
+    "keyword": "key_9068f006-2447-4c41-a2c7-06a663a3012b",
+    "answer": "🙌 Hola, bienvenido a este *Chatbot*",
     "options": {
       "media": null,
       "buttons": [],
@@ -23,13 +23,13 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "9ed3f7895d57fea82025da04d10c7fe8",
+    "refSerialize": "407f5cd8449cf3aebb05614c34410b3c",
     "from": "51923322922"
   },
   {
-    "ref": "ans_f736409b-8f4a-44ac-b831-c497f137b46e",
-    "keyword": "ans_735f80a3-7d12-4df3-bd1c-5801cb2832a8",
-    "answer": "te comparto los siguientes links de interes sobre el proyecto\n👉 *doc* para ver la documentación\n👉 *gracias*  para ver la lista de videos\n👉 *discord* unirte al discord",
+    "ref": "ans_9ec138c2-ea9f-4d42-bb8b-5fb0834c00f5",
+    "keyword": "ans_cdc21275-b59e-4e78-8122-98c6a3b4e767",
+    "answer": "Te comparto los siguientes enlaces de interés sobre el proyecto:\n👉 *doc* para ver la documentación\n👉 *gracias* para ver cómo apoyar el proyecto\n👉 *discord* para unirte al Discord",
     "options": {
       "media": null,
       "buttons": [],
@@ -40,7 +40,7 @@
       "ref": null,
       "nested": [
         {
-          "ref": "key_0d2578ac-8b9f-477a-9cd9-938cb2cde2c4",
+          "ref": "key_cb8aee2a-669b-46ba-82a8-a6855c2631ce",
           "keyword": [
             "doc",
             "documentacion",
@@ -53,9 +53,9 @@
           "refSerialize": "f15c5b8220075276f0a11610f81f298f"
         },
         {
-          "ref": "ans_37e77050-4e62-489e-9464-faa730a6d1e7",
-          "keyword": "key_0d2578ac-8b9f-477a-9cd9-938cb2cde2c4",
-          "answer": "📄 Aquí encontras las documentación recuerda que puedes mejorarla\nhttps://bot-whatsapp.netlify.app/\n\n*2* Para siguiente paso.",
+          "ref": "ans_d0634562-18ea-44de-986d-5aaa9b1c9b65",
+          "keyword": "key_cb8aee2a-669b-46ba-82a8-a6855c2631ce",
+          "answer": "📄 Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
           "options": {
             "media": null,
             "buttons": [],
@@ -66,7 +66,7 @@
             "ref": null,
             "nested": [
               {
-                "ref": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
+                "ref": "key_e885cfda-f008-49df-a102-d3dec486fff0",
                 "keyword": [
                   "2",
                   "siguiente"
@@ -78,22 +78,12 @@
                 "refSerialize": "dbd7d4c0cf9448a3bda6293a6665acae"
               },
               {
-                "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-                "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "answer": "Este mensaje envia tres botones",
+                "ref": "ans_81d8e8b6-a634-4cbb-ae1f-2d0dbc202788",
+                "keyword": "key_e885cfda-f008-49df-a102-d3dec486fff0",
+                "answer": "Este mensaje es el paso siguiente, no tiene botones.",
                 "options": {
                   "media": null,
-                  "buttons": [
-                    {
-                      "body": "Boton 1"
-                    },
-                    {
-                      "body": "Boton 2"
-                    },
-                    {
-                      "body": "Boton 3"
-                    }
-                  ],
+                  "buttons": [],
                   "capture": false,
                   "child": null,
                   "delay": 0,
@@ -103,16 +93,16 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "afff7e7adb9724a513ccec9e18983cec"
+                "refSerialize": "931471da59273487adaa005087414e6d"
               }
             ],
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "940bfb486fbc5f091c2fd1d5965ffe8d"
+          "refSerialize": "562a37e90144685b200a9aa8ebe6c4ae"
         },
         {
-          "ref": "key_c24d8d69-3489-468b-8b1f-66489bc7e1c4",
+          "ref": "key_719cb964-e203-4091-b48a-f9d6e363428b",
           "keyword": [
             "gracias",
             "grac"
@@ -124,9 +114,9 @@
           "refSerialize": "1fe6b9002925caf13f444479e73d4434"
         },
         {
-          "ref": "ans_9f6d1fa1-6c51-429a-b33a-c82f4ae1a8e4",
-          "keyword": "key_c24d8d69-3489-468b-8b1f-66489bc7e1c4",
-          "answer": "🚀 Puedes aportar tu granito de arena a este proyecto\n[*opencollective*] https://opencollective.com/bot-whatsapp\n[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez\n[*patreon*] https://www.patreon.com/leifermendez\n\n*2* Para siguiente paso.",
+          "ref": "ans_eb5480e7-b4dd-4397-968a-817b7ef0e3c3",
+          "keyword": "key_719cb964-e203-4091-b48a-f9d6e363428b",
+          "answer": "🚀 Puedes aportar a este proyecto:\n[*opencollective*] https://opencollective.com/bot-whatsapp\n[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez\n[*patreon*] https://www.patreon.com/leifermendez\n\nEscribe *2* para el siguiente paso.",
           "options": {
             "media": null,
             "buttons": [],
@@ -137,7 +127,7 @@
             "ref": null,
             "nested": [
               {
-                "ref": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
+                "ref": "key_e885cfda-f008-49df-a102-d3dec486fff0",
                 "keyword": [
                   "2",
                   "siguiente"
@@ -149,22 +139,12 @@
                 "refSerialize": "dbd7d4c0cf9448a3bda6293a6665acae"
               },
               {
-                "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-                "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "answer": "Este mensaje envia tres botones",
+                "ref": "ans_81d8e8b6-a634-4cbb-ae1f-2d0dbc202788",
+                "keyword": "key_e885cfda-f008-49df-a102-d3dec486fff0",
+                "answer": "Este mensaje es el paso siguiente, no tiene botones.",
                 "options": {
                   "media": null,
-                  "buttons": [
-                    {
-                      "body": "Boton 1"
-                    },
-                    {
-                      "body": "Boton 2"
-                    },
-                    {
-                      "body": "Boton 3"
-                    }
-                  ],
+                  "buttons": [],
                   "capture": false,
                   "child": null,
                   "delay": 0,
@@ -174,174 +154,33 @@
                   "keyword": {},
                   "callback": false
                 },
-                "refSerialize": "afff7e7adb9724a513ccec9e18983cec"
+                "refSerialize": "931471da59273487adaa005087414e6d"
               }
             ],
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "494a3f8ace2c07ec702aea609a5d52ee"
-        },
-        {
-          "ref": "key_17b46958-9c7c-41a8-ac01-f0ef0a7bd281",
-          "keyword": [
-            "tutorial",
-            "tuto"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "5155dd58eba463ddd0effa966e7db620"
-        },
-        {
-          "ref": "ans_a943780f-be7a-4119-a2f9-b2d6d3e64ed4",
-          "keyword": "key_17b46958-9c7c-41a8-ac01-f0ef0a7bd281",
-          "answer": "🙌 Aquí encontras un ejemplo rapido\nhttps://bot-whatsapp.netlify.app/docs/example/\n\n*2* Para siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [
-              {
-                "ref": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "keyword": [
-                  "2",
-                  "siguiente"
-                ],
-                "options": {
-                  "sensitive": false,
-                  "regex": false
-                },
-                "refSerialize": "dbd7d4c0cf9448a3bda6293a6665acae"
-              },
-              {
-                "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-                "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "answer": "Este mensaje envia tres botones",
-                "options": {
-                  "media": null,
-                  "buttons": [
-                    {
-                      "body": "Boton 1"
-                    },
-                    {
-                      "body": "Boton 2"
-                    },
-                    {
-                      "body": "Boton 3"
-                    }
-                  ],
-                  "capture": false,
-                  "child": null,
-                  "delay": 0,
-                  "idle": null,
-                  "ref": null,
-                  "nested": [],
-                  "keyword": {},
-                  "callback": false
-                },
-                "refSerialize": "afff7e7adb9724a513ccec9e18983cec"
-              }
-            ],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "077e670008fd7f1fc3d2a35facabda21"
-        },
-        {
-          "ref": "key_ba4a1893-7237-4613-a3ce-ed977fc27a17",
-          "keyword": [
-            "discord"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "be744c19342592b913373a1f8728649c"
-        },
-        {
-          "ref": "ans_5e1b47fc-606d-47b9-8915-ced0f53b1062",
-          "keyword": "key_ba4a1893-7237-4613-a3ce-ed977fc27a17",
-          "answer": "🤪 Únete al discord\nhttps://link.codigoencasa.com/DISCORD\n\n*2* Para siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [
-              {
-                "ref": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "keyword": [
-                  "2",
-                  "siguiente"
-                ],
-                "options": {
-                  "sensitive": false,
-                  "regex": false
-                },
-                "refSerialize": "dbd7d4c0cf9448a3bda6293a6665acae"
-              },
-              {
-                "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-                "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-                "answer": "Este mensaje envia tres botones",
-                "options": {
-                  "media": null,
-                  "buttons": [
-                    {
-                      "body": "Boton 1"
-                    },
-                    {
-                      "body": "Boton 2"
-                    },
-                    {
-                      "body": "Boton 3"
-                    }
-                  ],
-                  "capture": false,
-                  "child": null,
-                  "delay": 0,
-                  "idle": null,
-                  "ref": null,
-                  "nested": [],
-                  "keyword": {},
-                  "callback": false
-                },
-                "refSerialize": "afff7e7adb9724a513ccec9e18983cec"
-              }
-            ],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "42183929d83c1d5cfc40d99c1bc872f8"
+          "refSerialize": "061af5ced4888b83b66f986dfb25aaf5"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "12bbf0600467ea717415c60e6a848cd6",
+    "refSerialize": "05f519ce08c8e89da49f50b294e9c714",
     "from": "51923322922"
   },
   {
-    "ref": "f253a9ad-1bf2-4312-9475-18ee22d97f23",
-    "keyword": "12bbf0600467ea717415c60e6a848cd6",
+    "ref": "e3423f99-6807-4cb2-b1fa-363aa4cfc262",
+    "keyword": "05f519ce08c8e89da49f50b294e9c714",
     "answer": "Doc",
     "options": {},
     "from": "51923322922",
     "refSerialize": "d11fb00fe6cd908c8560f0c85ad7835a"
   },
   {
-    "ref": "ans_37e77050-4e62-489e-9464-faa730a6d1e7",
-    "keyword": "key_0d2578ac-8b9f-477a-9cd9-938cb2cde2c4",
-    "answer": "📄 Aquí encontras las documentación recuerda que puedes mejorarla\nhttps://bot-whatsapp.netlify.app/\n\n*2* Para siguiente paso.",
+    "ref": "ans_d0634562-18ea-44de-986d-5aaa9b1c9b65",
+    "keyword": "key_cb8aee2a-669b-46ba-82a8-a6855c2631ce",
+    "answer": "📄 Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
     "options": {
       "media": null,
       "buttons": [],
@@ -352,7 +191,7 @@
       "ref": null,
       "nested": [
         {
-          "ref": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
+          "ref": "key_e885cfda-f008-49df-a102-d3dec486fff0",
           "keyword": [
             "2",
             "siguiente"
@@ -364,22 +203,12 @@
           "refSerialize": "dbd7d4c0cf9448a3bda6293a6665acae"
         },
         {
-          "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-          "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-          "answer": "Este mensaje envia tres botones",
+          "ref": "ans_81d8e8b6-a634-4cbb-ae1f-2d0dbc202788",
+          "keyword": "key_e885cfda-f008-49df-a102-d3dec486fff0",
+          "answer": "Este mensaje es el paso siguiente, no tiene botones.",
           "options": {
             "media": null,
-            "buttons": [
-              {
-                "body": "Boton 1"
-              },
-              {
-                "body": "Boton 2"
-              },
-              {
-                "body": "Boton 3"
-              }
-            ],
+            "buttons": [],
             "capture": false,
             "child": null,
             "delay": 0,
@@ -389,50 +218,29 @@
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "afff7e7adb9724a513ccec9e18983cec"
+          "refSerialize": "931471da59273487adaa005087414e6d"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "940bfb486fbc5f091c2fd1d5965ffe8d",
+    "refSerialize": "562a37e90144685b200a9aa8ebe6c4ae",
     "from": "51923322922"
   },
   {
-    "ref": "7ee5f1f6-d8ba-4b52-ad4b-68fce2dc857e",
-    "keyword": "940bfb486fbc5f091c2fd1d5965ffe8d",
-    "answer": "2",
+    "ref": "590a5a6a-684b-40cd-a046-50c4bfd2db8e",
+    "keyword": "562a37e90144685b200a9aa8ebe6c4ae",
+    "answer": "Discord",
     "options": {},
     "from": "51923322922",
-    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+    "refSerialize": "8dd62a371a138f7315f8f9db2238b7ca"
   },
   {
-    "ref": "ans_c52b4469-4292-4003-8edf-830cd566a449",
-    "keyword": "key_ee0cc4ba-d22c-43f6-95e4-b6de993e43ca",
-    "answer": "Este mensaje envia tres botones",
-    "options": {
-      "media": null,
-      "buttons": [
-        {
-          "body": "Boton 1"
-        },
-        {
-          "body": "Boton 2"
-        },
-        {
-          "body": "Boton 3"
-        }
-      ],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "afff7e7adb9724a513ccec9e18983cec",
-    "from": "51923322922"
+    "ref": "3ef21db1-9fb8-4499-ab0b-e9d589c284f1",
+    "keyword": "8dd62a371a138f7315f8f9db2238b7ca",
+    "answer": "_event_media__72605c3b-0c76-4149-8daa-1c34cfcc8e62",
+    "options": {},
+    "from": "51923322922",
+    "refSerialize": "a9293655c4714364f5184a3936262262"
   }
 ]
