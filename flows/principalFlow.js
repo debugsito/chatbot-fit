@@ -1,19 +1,22 @@
+// flows/principalFlow.js
 const { addKeyword } = require('@bot-whatsapp/bot');
-const flowDocs = require('./docsFlow');
-const flowGracias = require('./graciasFlow');
+const membresiasFlow = require('./membresiasFlow');
+const serviciosFlow = require('./serviciosFlow');
+const turnosFlow = require('./turnosFlow');
+const docsFlow = require('./docsFlow');
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola, bienvenido a este *Chatbot*')
+const principalFlow = addKeyword(['hola', 'inicio', 'empezar'])
+    .addAnswer('🙌 ¡Hola! Bienvenido a *FitCloud Assistant*')
     .addAnswer(
         [
-            'Te comparto los siguientes enlaces de interés sobre el proyecto:',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias* para ver cómo apoyar el proyecto',
-            '👉 *discord* para unirte al Discord',
+            'Te ofrezco las siguientes opciones:',
+            '👉 Escribe *membresias* para ver nuestras membresías',
+            '👉 Escribe *servicios* para ver los entrenamientos y clases disponibles',
+            '👉 Escribe *turnos* para ver los horarios disponibles',
         ],
         null,
         null,
-        [flowDocs, flowGracias]
+        [membresiasFlow, serviciosFlow, turnosFlow, docsFlow]
     );
 
-module.exports = flowPrincipal;
+module.exports = principalFlow;
