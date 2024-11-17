@@ -27,6 +27,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          NODE_BIN="$HOME/.nvm/versions/node/v16.20.2/bin/node"
+          NPM_BIN="$HOME/.nvm/versions/node/v16.20.2/bin/npm"
+          PM2_BIN="$HOME/.nvm/versions/node/v16.20.2/bin/pm2"
           ssh -o StrictHostKeyChecking=no ec2-user@$HOST << 'EOF'
             # directorio a usar
             APP_DIR="/home/ec2-user/app"
@@ -46,18 +49,16 @@ jobs:
             # obtener environment
             aws s3 cp s3://fit-assistant/env_fit .env
           
-            # dependencias
-            ~/.nvm/versions/node/v16.20.2/bin/npm install
+            # Instalar dependencias
+            "$NPM_BIN" install
           
-            # inicial o recargar con pm2 (previamente instalado)
-            if ~/.nvm/versions/node/v16.20.2/bin/pm2 list | grep -q "chatbot-fit"; then
-              # recargar si existe
-              ~/.nvm/versions/node/v16.20.2/bin/pm2 reload "chatbot-fit"
+            # Inicializar o recargar con PM2
+            if "$PM2_BIN" list | grep -q "chatbot-fit"; then
+              "$PM2_BIN" reload "chatbot-fit"
             else
-              # Start if app does not exist
-              ~/.nvm/versions/node/v16.20.2/bin/pm2 start --name "chatbot-fit" ~/.nvm/versions/node/v16.20.2/bin/node index.js
+              "$PM2_BIN" start "$NPM_BIN" --name "chatbot-fit" -- run start
             fi
-
-            # Save PM2 process list
-            ~/.nvm/versions/node/v16.20.2/bin/pm2 save
+          
+            # Guardar procesos PM2
+            "$PM2_BIN" save
           EOF
