@@ -30,6 +30,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no ec2-user@$HOST << 'EOF'
             # directorio a usar
             APP_DIR="/home/ec2-user/app"
+            ls
+            pwd
           
             # Crear directorio y clonar solo si no existe
             if [ ! -d "$APP_DIR" ]; then
