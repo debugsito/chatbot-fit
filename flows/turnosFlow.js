@@ -10,7 +10,7 @@ const turnosFlow = addKeyword(['turnos', 'horarios', 'clases disponibles'])
             const querySnapshot = await getDocs(collection(db, 'turnos'));
             let turnos = '🕑 Estos son los turnos disponibles:\n';
             querySnapshot.forEach((doc) => {
-                turnos += `- ${doc.data().dia} - ${doc.data().horario}\n`;
+                turnos += `- ${doc.data().dia} horario: ${doc.data().horario}\n`;
             });
 
             // Enviar el resultado usando flowDynamic
