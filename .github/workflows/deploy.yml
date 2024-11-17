@@ -1,0 +1,62 @@
+name: Deploy ChatbotFit to AWS EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Deploy to EC2
+        env:
+          PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
+          HOST: ${{ secrets.EC2_HOST }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh -o StrictHostKeyChecking=no ec2-user@$HOST << 'EOF'
+            # directorio a usar
+            APP_DIR="/home/ec2-user/app"
+          
+            # Crear directorio y clonar solo si no existe
+            if [ ! -d "$APP_DIR" ]; then
+              mkdir -p $APP_DIR
+              git clone https://github.com/debugsito/chatbot-fit.git $APP_DIR
+            fi
+          
+            cd $APP_DIR
+          
+            # pull
+            git reset --hard
+            git pull origin master
+          
+            # obtener environment
+            aws s3 cp s3://fit-assistant/env_fit .env
+          
+            # dependencias
+            npm install
+          
+            # inicial o recargar con pm2 (previamente instalado)
+            if pm2 list | grep -q "chatbot-fit"; then
+              # recargar si existe
+              pm2 reload "chatbot-fit"
+            else
+              # Start if app does not exist
+              pm2 start npm --name "chatbot-fit" -- run start
+            fi
+
+            # Save PM2 process list
+            pm2 save
+          EOF
