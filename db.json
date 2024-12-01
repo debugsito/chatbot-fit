@@ -1,15 +1,15 @@
 [
   {
-    "ref": "c9103cd5-b69f-402e-a19b-1606d5751a20",
-    "keyword": "0a41ad05e10440bcad00ef7496b833cd",
+    "ref": "43265e4f-b904-4be7-87b5-7b437561a7c6",
+    "keyword": "911e4d1d5b7e29ec5be0414c0c2569a6",
     "answer": "hola",
     "options": {},
     "from": "51964994415",
     "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
   },
   {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
+    "ref": "ans_4e01d39c-71ae-4b7f-b085-e4e6fcd17a11",
+    "keyword": "key_6f52a250-d3aa-48d9-9972-45f666b52456",
     "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
     "options": {
       "media": null,
@@ -23,12 +23,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
+    "refSerialize": "3a9c6480d53dfc66a5425358aa3d73d1",
     "from": "51964994415"
   },
   {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
+    "ref": "ans_894fa29b-217c-4f7a-bc6c-1428e50a0c5f",
+    "keyword": "ans_4e01d39c-71ae-4b7f-b085-e4e6fcd17a11",
     "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
     "options": {
       "media": null,
@@ -40,21 +40,55 @@
       "ref": null,
       "nested": [
         {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
+          "ref": "key_2a27f112-05d6-42fa-a366-26397ad5f39f",
           "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
+            "suscribirme"
           ],
           "options": {
             "sensitive": false,
             "regex": false
           },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
+          "refSerialize": "2659715196dd47a17fc9d433c7c5b868"
         },
         {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
+          "ref": "ans_3c1f7104-2c19-4920-b82d-88e1db948b83",
+          "keyword": "key_2a27f112-05d6-42fa-a366-26397ad5f39f",
+          "answer": "¡Hola! 😄 Vamos a iniciar tu suscripción.\nPor favor, indícame tu nombre completo.",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "16a84df9efae5fbccb862e288d3123b5"
+        },
+        {
+          "ref": "ans_8f1b7309-2694-4da9-8e72-fe6baf9d6840",
+          "keyword": "ans_3c1f7104-2c19-4920-b82d-88e1db948b83",
+          "answer": "¿Tienes un correo electrónico que quieras proporcionar? (opcional)",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "f0f4f027b93efa1406170eb536d3e262"
+        },
+        {
+          "ref": "ans_9ee5a3dd-9631-4838-be3e-b23379919940",
+          "keyword": "ans_8f1b7309-2694-4da9-8e72-fe6baf9d6840",
           "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
           "options": {
             "media": null,
@@ -68,25 +102,48 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
+          "refSerialize": "00154d272ea2a3211945ed6428376764"
         },
         {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
+          "ref": "ans_e3fb7e78-1573-4dcb-9737-e7d457feb0c5",
+          "keyword": "ans_9ee5a3dd-9631-4838-be3e-b23379919940",
+          "answer": "Responde con el número de la membresía que deseas.",
           "options": {
-            "sensitive": false,
-            "regex": false
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
           },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
+          "refSerialize": "e9cda73e881130736f1d781696d4a9e7"
         },
         {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
+          "ref": "ans_7cfbbf3e-2df8-4e01-bd4c-b56125d3854b",
+          "keyword": "ans_e3fb7e78-1573-4dcb-9737-e7d457feb0c5",
+          "answer": "Envía una imagen del comprobante de pago.",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "ef1b4dccb59d8b8748f19742ffebf54c"
+        },
+        {
+          "ref": "ans_c404314b-a0f2-48b2-95c8-86ca91cf2934",
+          "keyword": "ans_7cfbbf3e-2df8-4e01-bd4c-b56125d3854b",
+          "answer": "🎉 ¡Gracias por tu suscripción!",
           "options": {
             "media": null,
             "buttons": [],
@@ -99,159 +156,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
+          "refSerialize": "812070e8fe1be22b5b130a7698cc9f6d"
         },
         {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "cf624dab-47c5-4124-bd0d-a548e72c435d",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "turnos",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "3982c64d95c2a17546911ce641f0c4a4"
-  },
-  {
-    "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-    "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-    "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71",
-    "from": "51964994415"
-  },
-  {
-    "ref": "0d911a83-7a4f-46d8-8d4d-f13a00e93395",
-    "keyword": null,
-    "answer": "🕑 Estos son los turnos disponibles:\n- mañana - 7 a 11:59 am\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "057f509d24f503706af00701ea83b268"
-  },
-  {
-    "ref": "41718337-4cd6-41d2-9ce6-0f4e8e47da71",
-    "keyword": "ed12785b751a43a38b5f6357a3e2cd71",
-    "answer": "hola",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
+          "ref": "key_184843f1-7dc7-415a-a444-00c1a29bfb4e",
           "keyword": [
             "membresia",
             "membresías",
@@ -264,8 +172,8 @@
           "refSerialize": "c4251e765e297108354639ebd906c049"
         },
         {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
+          "ref": "ans_41b80dca-9410-42d8-8d88-3d657adcf77b",
+          "keyword": "key_184843f1-7dc7-415a-a444-00c1a29bfb4e",
           "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
           "options": {
             "media": null,
@@ -279,10 +187,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
+          "refSerialize": "5ac9b776725142968162155acedbc5cd"
         },
         {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
+          "ref": "key_8a64310f-32c7-4f06-95f9-7e4f50d26c20",
           "keyword": [
             "servicios",
             "entrenamientos",
@@ -295,8 +203,8 @@
           "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
         },
         {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
+          "ref": "ans_2fa4b5cc-8263-41cc-904c-520b9d5bc25f",
+          "keyword": "key_8a64310f-32c7-4f06-95f9-7e4f50d26c20",
           "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
           "options": {
             "media": null,
@@ -310,10 +218,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
+          "refSerialize": "a0455404e373f35dc39826a3d6e953b4"
         },
         {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
+          "ref": "key_666015ac-d0e2-4e38-b8a9-1c3cb178fac6",
           "keyword": [
             "turnos",
             "horarios",
@@ -326,8 +234,8 @@
           "refSerialize": "458a796159c05984f616f0f89b358d87"
         },
         {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
+          "ref": "ans_f7b0e3f3-0138-4161-b902-0e54d1c72245",
+          "keyword": "key_666015ac-d0e2-4e38-b8a9-1c3cb178fac6",
           "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
           "options": {
             "media": null,
@@ -341,25 +249,55 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
+          "refSerialize": "fe319fe9b9731bb96704336267e6bc64"
         },
         {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
+          "ref": "key_59546b62-fa2d-4014-b97e-94806f480972",
           "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
+            "cerrar",
+            "logout"
           ],
           "options": {
             "sensitive": false,
             "regex": false
           },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
+          "refSerialize": "6f2b3b3d3e4af536564262656a45a26c"
         },
         {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
+          "ref": "ans_f5544991-8bb3-46a7-84e0-66163e56b851",
+          "keyword": "key_59546b62-fa2d-4014-b97e-94806f480972",
+          "answer": "Si deseas cerrar sesión y registrar otro participante, escribe *logout*.",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "a48b1d7415788958a0d63b0f2ee46289"
+        },
+        {
+          "ref": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+          "keyword": [
+            "reservar turno",
+            "reservar",
+            "turno"
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "a77c8fec9a9729c5a5296c0f2612c5ee"
+        },
+        {
+          "ref": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+          "keyword": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+          "answer": "🔒 Primero verificaré si estás logueado...",
           "options": {
             "media": null,
             "buttons": [],
@@ -370,29 +308,65 @@
             "ref": null,
             "nested": [],
             "keyword": {},
-            "callback": false
+            "callback": true
           },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
+          "refSerialize": "3bb551a738fda4679f319fc9c3d5f1c6"
+        },
+        {
+          "ref": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
+          "keyword": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+          "answer": "Por favor, responde con el número del turno que deseas reservar.",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "773b7ae2bffddb131e695e2f59441dbf"
+        },
+        {
+          "ref": "ans_f2880945-224c-4742-ac2b-acfa6514d149",
+          "keyword": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
+          "answer": "Si deseas cancelar tu turno o hacer otro cambio, por favor avísame.",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": false,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "67c36ae55dbfe8ed87719ea57ab3bc95"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
+    "refSerialize": "1f24c5734427769899ffe711617b62c9",
     "from": "51964994415"
   },
   {
-    "ref": "17a4e5c4-ed22-4346-8500-100efcf89eda",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "servicios",
+    "ref": "ae5fa2d3-1d5f-4615-83cc-bf89685a04e7",
+    "keyword": "1f24c5734427769899ffe711617b62c9",
+    "answer": "quiero reservar un turno",
     "options": {},
     "from": "51964994415",
-    "refSerialize": "b5eb0bcfde7888ce6dc6473b0e5ad8f8"
+    "refSerialize": "33e55ff07a387c86b9c8659470a65f30"
   },
   {
-    "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-    "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-    "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
+    "ref": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+    "keyword": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+    "answer": "🔒 Primero verificaré si estás logueado...",
     "options": {
       "media": null,
       "buttons": [],
@@ -405,13 +379,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "d3728afcc1f2bce493565402b820639a",
+    "refSerialize": "3bb551a738fda4679f319fc9c3d5f1c6",
     "from": "51964994415"
   },
   {
-    "ref": "af40c316-03ba-464a-a6a3-811270f4b48d",
+    "ref": "8ee351e2-e6c1-4b74-b120-f11bef1c4327",
     "keyword": null,
-    "answer": "🏋️ Ofrecemos los siguientes servicios:\n- clase de baile\n",
+    "answer": "🕑 Estos son los turnos disponibles:\n1. martes - Disponibilidad: 6:00 am - 11:00 pm\n2. jueves - Disponibilidad: 6:00 am - 11:00 pm\n3. domingo - Disponibilidad: 8:00 am - 3:00 pm\n4. miercoles - Disponibilidad: 6:00 am - 11:00 pm\n5. sábado - Disponibilidad: 8:00 am - 6:00 pm\n6. viernes - Disponibilidad: 6:00 am - 11:00 pm\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -419,191 +393,65 @@
       "delay": 0
     },
     "from": "51964994415",
-    "refSerialize": "d7ed5b939cc41e0162210bbd7139d182"
+    "refSerialize": "d0fdb54546a14fd2928e96cdfa7bba50"
   },
   {
-    "ref": "52a04e15-8151-4f77-a254-63119b1dd228",
-    "keyword": "d3728afcc1f2bce493565402b820639a",
-    "answer": "hola",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
+    "ref": "3deef3ed-4186-49db-8f03-40098d81046a",
+    "keyword": null,
+    "answer": "Responde con el número del turno que deseas reservar.",
     "options": {
       "media": null,
       "buttons": [],
       "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "19deee5198cb7baa3405be6b8c0efed1"
+  },
+  {
+    "ref": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
+    "keyword": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+    "answer": "Por favor, responde con el número del turno que deseas reservar.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
       "child": null,
       "delay": 0,
       "idle": null,
       "ref": null,
       "nested": [],
       "keyword": {},
-      "callback": false
+      "callback": true
     },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
+    "refSerialize": "773b7ae2bffddb131e695e2f59441dbf",
     "from": "51964994415"
   },
   {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
+    "ref": "855dfd0b-2892-45ac-95b1-bafcf0356f70",
+    "keyword": "773b7ae2bffddb131e695e2f59441dbf",
+    "answer": "4",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "e8139b7fa2fbc1b48f247924f8ad1961"
+  },
+  {
+    "ref": "505b6d12-d3d1-4af9-a0cc-acb852b843ea",
+    "keyword": null,
+    "answer": "🎉 ¡Has reservado el turno *miercoles a las 6:00 am - 11:00 pm*!",
     "options": {
       "media": null,
       "buttons": [],
       "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
-        },
-        {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
-        },
-        {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
-        },
-        {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
-        },
-        {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
+      "delay": 0
     },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "d72f214d-9efa-4f29-b1f0-3c43d4cccf26",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "membresias",
-    "options": {},
     "from": "51964994415",
-    "refSerialize": "789e28f0b92de9d93ca1084628d235e1"
+    "refSerialize": "ad8706324c6086eee3db2d77545a468e"
   },
   {
-    "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-    "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-    "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
+    "ref": "ans_f2880945-224c-4742-ac2b-acfa6514d149",
+    "keyword": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
+    "answer": "Si deseas cancelar tu turno o hacer otro cambio, por favor avísame.",
     "options": {
       "media": null,
       "buttons": [],
@@ -616,864 +464,7 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a",
+    "refSerialize": "67c36ae55dbfe8ed87719ea57ab3bc95",
     "from": "51964994415"
-  },
-  {
-    "ref": "a59aa3d9-5031-4b6e-878b-3be43ebbeb87",
-    "keyword": null,
-    "answer": "💪 Aquí están nuestras membresías:\n- mensual S/90 \n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "c77a3a8d21f47dc00a5685169e36b9af"
-  },
-  {
-    "ref": "9cdf2018-9877-423a-894f-331030f812d5",
-    "keyword": "8f1d6cffdcb0d6d3af045d859c19964a",
-    "answer": "Hola",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
-        },
-        {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
-        },
-        {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
-        },
-        {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
-        },
-        {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "f3232be9-93ad-419e-af6b-161436d646b9",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "Turnos",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "cb7bfaa27adac7b8ce5ff96a1542f740"
-  },
-  {
-    "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-    "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-    "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71",
-    "from": "51964994415"
-  },
-  {
-    "ref": "77c5bd49-91e3-4519-a120-fc1ffc0ec832",
-    "keyword": null,
-    "answer": "🕑 Estos son los turnos disponibles:\n- mañana - 7 a 11:59 am\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "057f509d24f503706af00701ea83b268"
-  },
-  {
-    "ref": "e342596b-9358-43b9-9afb-94e491d9df78",
-    "keyword": "ed12785b751a43a38b5f6357a3e2cd71",
-    "answer": "Hola",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
-        },
-        {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
-        },
-        {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
-        },
-        {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
-        },
-        {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "282df331-8385-4dfc-8324-66696b21df4c",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "Membresias",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "af95b4ada0e4eff75d83b170a2da88f3"
-  },
-  {
-    "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-    "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-    "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a",
-    "from": "51964994415"
-  },
-  {
-    "ref": "e7f98834-de46-4d55-880b-801fe2c285fc",
-    "keyword": null,
-    "answer": "💪 Aquí están nuestras membresías:\n- Anual  S/800 \n- mensual S/90 \n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "372557ef8351014ae235680c5cc23557"
-  },
-  {
-    "ref": "991b1bed-ac9e-445b-a3ba-0bc3b23a62ef",
-    "keyword": "8f1d6cffdcb0d6d3af045d859c19964a",
-    "answer": "Hola, me pueden brindar información?",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "8b45d07173cdebfd19aa7879fc065042"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
-        },
-        {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
-        },
-        {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
-        },
-        {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
-        },
-        {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "b010913e-ca64-495e-a9e0-83597b7bf4b1",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "Cuáles son las membresías?",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "36a29dcedd3a011ea6a8b646975f984b"
-  },
-  {
-    "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-    "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-    "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a",
-    "from": "51964994415"
-  },
-  {
-    "ref": "2707295c-0266-42a4-bea1-bc0f0d04db04",
-    "keyword": null,
-    "answer": "💪 Aquí están nuestras membresías:\n- Anual  S/800 \n- mensual S/90 \n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "372557ef8351014ae235680c5cc23557"
-  },
-  {
-    "ref": "c26cc16c-571b-4d17-be1a-6f6d710e57b1",
-    "keyword": "8f1d6cffdcb0d6d3af045d859c19964a",
-    "answer": "HoLa",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "b3cde75d92e0e69021b27372345f07eb"
-  },
-  {
-    "ref": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "keyword": "key_4e165f5b-0910-43e0-af41-56d96362d7c8",
-    "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "270b3ee02271c3ed6aa609d9df5e4f93",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ans_4fe6dceb-76b5-47a6-838c-5ac77cf99e04",
-    "keyword": "ans_904eff92-1086-4df4-8f77-8f23fcc7e54a",
-    "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [
-        {
-          "ref": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "keyword": [
-            "membresia",
-            "membresías",
-            "membresias"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "c4251e765e297108354639ebd906c049"
-        },
-        {
-          "ref": "ans_7f89f552-f0a1-4a59-a2c1-79c98dca11b9",
-          "keyword": "key_180bd770-adfb-4331-b2a8-eb448edca74c",
-          "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "8f1d6cffdcb0d6d3af045d859c19964a"
-        },
-        {
-          "ref": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "keyword": [
-            "servicios",
-            "entrenamientos",
-            "clases"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
-        },
-        {
-          "ref": "ans_b87a94a8-cf43-4105-85e7-913e686ae785",
-          "keyword": "key_a51e0bb1-c0b9-4bc4-ad14-6cd6737b2142",
-          "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "d3728afcc1f2bce493565402b820639a"
-        },
-        {
-          "ref": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "keyword": [
-            "turnos",
-            "horarios",
-            "clases disponibles"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "458a796159c05984f616f0f89b358d87"
-        },
-        {
-          "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-          "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-          "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": true
-          },
-          "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71"
-        },
-        {
-          "ref": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "keyword": [
-            "doc",
-            "documentacion",
-            "documentación"
-          ],
-          "options": {
-            "sensitive": false,
-            "regex": false
-          },
-          "refSerialize": "f15c5b8220075276f0a11610f81f298f"
-        },
-        {
-          "ref": "ans_180f9c20-7a37-4192-86a2-7d6ab093b9a6",
-          "keyword": "key_bb8427ea-21d4-4bcc-96a5-c1071dfb5999",
-          "answer": "Aquí encuentras la documentación, recuerda que puedes mejorarla:\nhttps://bot-whatsapp.netlify.app/\n\nEscribe *2* para el siguiente paso.",
-          "options": {
-            "media": null,
-            "buttons": [],
-            "capture": false,
-            "child": null,
-            "delay": 0,
-            "idle": null,
-            "ref": null,
-            "nested": [],
-            "keyword": {},
-            "callback": false
-          },
-          "refSerialize": "2133af75594ac8ccdfac4f546abaab4a"
-        }
-      ],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9c7f7661a910e4a98cea553f87e35163",
-    "from": "51964994415"
-  },
-  {
-    "ref": "ca78eb35-d72a-452a-8b6a-139f07ce4d91",
-    "keyword": "9c7f7661a910e4a98cea553f87e35163",
-    "answer": "Turnos",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "cb7bfaa27adac7b8ce5ff96a1542f740"
-  },
-  {
-    "ref": "ans_d6ce1568-fde4-4996-af07-c5162aad3ff8",
-    "keyword": "key_6a11af5a-b209-48e3-b7e9-29d237da1d36",
-    "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "ed12785b751a43a38b5f6357a3e2cd71",
-    "from": "51964994415"
-  },
-  {
-    "ref": "95d343d5-c74e-4e4a-93c1-911302e89989",
-    "keyword": null,
-    "answer": "🕑 Estos son los turnos disponibles:\n- mañana - 7 a 11:59 am\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "057f509d24f503706af00701ea83b268"
   }
 ]

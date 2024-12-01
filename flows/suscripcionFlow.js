@@ -1,124 +1,146 @@
 const { addKeyword } = require('@bot-whatsapp/bot');
 const { collection, getDocs, addDoc } = require('firebase/firestore');
 const { db } = require('../config/firebase');
-const AWS = require('aws-sdk');
+const { guardarSesion, obtenerSesion } = require('../utils/sesion'); // Asegúrate de que la ruta sea correcta
+const { subirImagenAS3 } = require('../utils/upload'); // Asegúrate de que la ruta sea correcta
 
-// Configuración de S3
-const s3 = new AWS.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    region: process.env.AWS_REGION,
-});
-
+// Flujo de suscripción
 const suscripcionFlow = addKeyword(['suscribirme'])
-    .addAnswer('🙌 ¡Iniciemos tu suscripción! Por favor, indícame tu nombre completo.', null, async (ctx, { flowDynamic }) => {
-        ctx.session.pasoActual = 'nombre'; // Paso actual
-    })
-    .addAnswer(null, null, async (ctx, { flowDynamic }) => {
-        if (ctx.session.pasoActual === 'nombre') {
-            ctx.session.nombre = ctx.body;
-            ctx.session.pasoActual = 'telefono';
-            await flowDynamic(['Gracias. Ahora, dime tu número de teléfono.']);
-        }
-    })
-    .addAnswer(null, null, async (ctx, { flowDynamic }) => {
-        if (ctx.session.pasoActual === 'telefono') {
-            ctx.session.telefono = ctx.body;
-            ctx.session.pasoActual = 'correo';
-            await flowDynamic(['Perfecto. Ahora, indícame tu correo electrónico (opcional).']);
-        }
-    })
-    .addAnswer(null, null, async (ctx, { flowDynamic }) => {
-        if (ctx.session.pasoActual === 'correo') {
-            ctx.session.correo = ctx.body;
-            ctx.session.pasoActual = 'comprobante';
-            await flowDynamic(['Por último, envía una foto del comprobante de pago.']);
-        }
-    })
-    .addAnswer(null, null, async (ctx, { flowDynamic }) => {
-        if (ctx.session.pasoActual === 'comprobante') {
-            if (!ctx.body.startsWith('https://')) {
-                await flowDynamic(['❌ Necesito que envíes una imagen válida como comprobante.']);
-                return;
+    .addAnswer(
+        ['¡Hola! 😄 Vamos a iniciar tu suscripción.', 'Por favor, indícame tu nombre completo.'],
+        { capture: true },
+
+        async (ctx, { flowDynamic, endFlow }) => {
+            // Verificamos si la sesión ya existe en Firestore
+            let sessionData = await obtenerSesion(ctx.from); // Usamos ctx.from como identificador único
+
+            if (!sessionData) {
+                sessionData = {}; // Si no existe, inicializamos la sesión vacía
             }
 
-            const imageUrl = ctx.body;
-            ctx.session.comprobante = imageUrl; // Guardamos el URL temporal
+            // Guardamos el nombre en la sesión
+            sessionData.nombre = ctx.body;
+            await guardarSesion(ctx.from, sessionData); // Guardamos la sesión
 
+            return await flowDynamic(`Encantado *${sessionData.nombre}*, continuemos...`);
+        }
+    )
+    .addAnswer(
+        ['¿Tienes un correo electrónico que quieras proporcionar? (opcional)'],
+        { capture: true },
+
+        async (ctx, { flowDynamic }) => {
+            // Recuperamos la sesión desde Firestore
+            let sessionData = await obtenerSesion(ctx.from);
+
+            // Guardamos el correo en la sesión
+            sessionData.correo = ctx.body.trim();
+            await guardarSesion(ctx.from, sessionData); // Guardamos la sesión
+
+            return await flowDynamic('Un momento, estamos obteniendo nuestras membresías disponibles...');
+        }
+    )
+    .addAnswer(
+        ['💪 Estamos obteniendo nuestras membresías, un momento...'],
+        null, // No se captura respuesta aquí, solo se muestra el mensaje
+        async (ctx, { flowDynamic }) => {
             try {
-                // Subir la imagen a S3
-                const s3Params = {
-                    Bucket: process.env.AWS_S3_BUCKET,
-                    Key: `comprobantes/${Date.now()}-${ctx.session.nombre}.jpg`, // Nombre único
-                    Body: Buffer.from(imageUrl.split(',')[1], 'base64'),
-                    ContentType: 'image/jpeg',
-                };
-                const upload = await s3.upload(s3Params).promise();
-
-                ctx.session.s3Comprobante = upload.Location; // URL pública en S3
-                ctx.session.pasoActual = 'membresia';
-
-                await flowDynamic([
-                    'Comprobante recibido. Ahora, selecciona tu membresía.',
-                    'Un momento, estamos obteniendo nuestras membresías disponibles...',
-                ]);
-
-                // Obtener membresías de Firebase
+                // Obtenemos las membresías de la base de datos
                 const querySnapshot = await getDocs(collection(db, 'membresias'));
-                let membresias = '💪 Estas son las opciones de membresía:\n';
-                const opciones = [];
-
-                querySnapshot.forEach((doc, index) => {
-                    const data = doc.data();
-                    membresias += `${index + 1}. ${data.nombre} - S/${data.precio}\n`;
-                    opciones.push({ id: index + 1, ...data });
+                let membresias = [];
+                querySnapshot.forEach((doc) => {
+                    membresias.push({
+                        id: doc.id,
+                        nombre: doc.data().nombre,
+                        precio: doc.data().precio,
+                    });
                 });
 
-                ctx.session.membresiasDisponibles = opciones; // Guardamos las opciones
-                await flowDynamic([
-                    { body: membresias },
-                    'Por favor, escribe el número de la membresía que deseas elegir.',
-                ]);
+                // Guardamos las membresías en la sesión
+                let sessionData = await obtenerSesion(ctx.from);
+                sessionData.membresias = membresias;
+                await guardarSesion(ctx.from, sessionData); // Guardamos las membresías en la sesión
+
+                // Creamos el mensaje con las opciones de membresías
+                let optionsMessage = '💪 Aquí están nuestras membresías disponibles:\n';
+                membresias.forEach((membresia, index) => {
+                    optionsMessage += `${index + 1}. ${membresia.nombre} - S/${membresia.precio}\n`;
+                });
+
+                // Enviar las opciones para seleccionar la membresía
+                await flowDynamic(optionsMessage);
             } catch (error) {
-                console.error('Error al subir comprobante a S3:', error);
-                await flowDynamic(['Lo siento, hubo un error procesando tu comprobante. Intenta nuevamente.']);
+                console.error('Error al obtener membresías: ', error);
+                await flowDynamic(['Lo siento, no pude obtener las membresías en este momento.']);
             }
         }
-    })
-    .addAnswer(null, null, async (ctx, { flowDynamic }) => {
-        if (ctx.session.pasoActual === 'membresia') {
-            const opcion = parseInt(ctx.body.trim(), 10);
-            const membresia = ctx.session.membresiasDisponibles?.find((item) => item.id === opcion);
+    )
+    .addAnswer(
+        ['Responde con el número de la membresía que deseas.'],
+        { capture: true },
 
+        async (ctx, { flowDynamic, endFlow }) => {
+            // Recuperamos la sesión desde Firestore
+            let sessionData = await obtenerSesion(ctx.from);
+
+            const opcion = parseInt(ctx.body.trim(), 10);
+            const membresia = sessionData.membresias?.[opcion - 1];
             if (!membresia) {
-                await flowDynamic(['❌ Opción no válida. Por favor, selecciona una de las opciones enumeradas.']);
-                return;
+                return await flowDynamic(['❌ Opción no válida. Por favor, selecciona una de las opciones enumeradas.']);
             }
 
-            ctx.session.membresia = membresia;
+            // Guardamos la membresía seleccionada en la sesión
+            sessionData.membresia = membresia;
+            await guardarSesion(ctx.from, sessionData);
+
+            return await flowDynamic(`Has seleccionado la membresía *${membresia.nombre}* por S/${membresia.precio}. Envíame una foto del comprobante de pago.`);
+        }
+    )
+    .addAnswer(
+        ['Envía una imagen del comprobante de pago.'],
+        { capture: true },
+
+        async (ctx, { flowDynamic, endFlow }) => {
+            // Recuperamos la sesión desde Firestore
+            let sessionData = await obtenerSesion(ctx.from);
+
+            const imageBuffer = ctx.media; // Suponiendo que `ctx.media` contiene la imagen enviada
+            const imageName = `comprobante_${ctx.from}_${Date.now()}.jpg`; // Nombre único para la imagen
 
             try {
-                // Guardar datos en Firebase
-                await addDoc(collection(db, 'suscripciones'), {
-                    nombre: ctx.session.nombre,
-                    telefono: ctx.session.telefono,
-                    correo: ctx.session.correo || '',
-                    membresia: membresia.nombre,
-                    comprobante: ctx.session.s3Comprobante,
-                    fecha: new Date().toISOString(),
-                });
+                const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
+                sessionData.comprobante = imagenUrl; // Guardamos la URL de la imagen en la sesión
 
-                await flowDynamic([
-                    `✅ Has seleccionado la membresía *${membresia.nombre}* por S/${membresia.precio}.`,
-                    'Tu suscripción ha sido registrada exitosamente. ¡Gracias! 🎉',
-                    'Ahora puedes separar turnos o asistir al gimnasio según tu membresía.',
-                ]);
-                ctx.session.pasoActual = null; // Reiniciamos el flujo
+                // Guardamos la suscripción en Firestore
+                const suscripcionData = {
+                    nombre: sessionData.nombre,
+                    correo: sessionData.correo || '',
+                    telefono: ctx.from, // Tomamos el teléfono de ctx.from
+                    membresia: sessionData.membresia,
+                    imagenUrl: imagenUrl,
+                    fecha: new Date(),
+                };
+
+                await addDoc(collection(db, 'suscripciones'), suscripcionData);
+                return await flowDynamic(`🎉 ¡Gracias por tu suscripción! Todo está registrado exitosamente.`);
             } catch (error) {
-                console.error('Error al guardar suscripción en Firebase:', error);
-                await flowDynamic(['Lo siento, no pude registrar tu suscripción. Intenta nuevamente.']);
+                console.error('Error al guardar suscripción: ', error);
+                return await flowDynamic(['❌ Hubo un error al guardar el comprobante. Intenta nuevamente.']);
             }
         }
-    });
+    )
+    .addAnswer(
+        ['🎉 ¡Gracias por tu suscripción!'],
+        null, // No se captura respuesta
+        async (ctx, { flowDynamic, gotoFlow }) => {
+            // Marcamos la sesión como logueada
+            let sessionData = await obtenerSesion(ctx.from);
+            sessionData.isLoggedIn = true;
+            await guardarSesion(ctx.from, sessionData); // Guardamos la sesión actualizada
+
+            await flowDynamic('Ahora, vamos a reservar tu turno. Te mostraré los turnos disponibles...');
+            return gotoFlow(require('./reservaTurnoFlow'))
+        }
+    );
 
 module.exports = suscripcionFlow;

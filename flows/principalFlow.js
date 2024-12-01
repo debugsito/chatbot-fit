@@ -5,6 +5,7 @@ const serviciosFlow = require('./serviciosFlow');
 const turnosFlow = require('./turnosFlow');
 const docsFlow = require('./docsFlow');
 const suscripcionFlow = require('./suscripcionFlow');
+const reservaTurnoFlow = require('./reservaTurnoFlow');
 
 
 const principalFlow = addKeyword(['hola', 'inicio', 'empezar'])
@@ -18,7 +19,7 @@ const principalFlow = addKeyword(['hola', 'inicio', 'empezar'])
         ],
         null,
         null,
-        [suscripcionFlow, membresiasFlow, serviciosFlow, turnosFlow, docsFlow]
+        [suscripcionFlow, membresiasFlow, serviciosFlow, turnosFlow, docsFlow, reservaTurnoFlow]
     );
 
 module.exports = principalFlow;
