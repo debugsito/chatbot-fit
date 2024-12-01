@@ -1,15 +1,14 @@
 [
   {
-    "ref": "43265e4f-b904-4be7-87b5-7b437561a7c6",
-    "keyword": "911e4d1d5b7e29ec5be0414c0c2569a6",
+    "ref": "a0c28f01-f5cf-4407-a054-5a0b8808a362",
     "answer": "hola",
     "options": {},
     "from": "51964994415",
     "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
   },
   {
-    "ref": "ans_4e01d39c-71ae-4b7f-b085-e4e6fcd17a11",
-    "keyword": "key_6f52a250-d3aa-48d9-9972-45f666b52456",
+    "ref": "ans_1877a573-2cdf-4ce8-97ff-7c7906d1df5e",
+    "keyword": "key_f3aa8195-2d4a-4712-9e50-5c0bc01569e2",
     "answer": "🙌 ¡Hola! Bienvenido a *FitCloud Assistant*",
     "options": {
       "media": null,
@@ -23,12 +22,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "3a9c6480d53dfc66a5425358aa3d73d1",
+    "refSerialize": "474c6318fafd723d677b239559505223",
     "from": "51964994415"
   },
   {
-    "ref": "ans_894fa29b-217c-4f7a-bc6c-1428e50a0c5f",
-    "keyword": "ans_4e01d39c-71ae-4b7f-b085-e4e6fcd17a11",
+    "ref": "ans_a1c2eda4-130a-462c-bdcb-7114c8162f18",
+    "keyword": "ans_1877a573-2cdf-4ce8-97ff-7c7906d1df5e",
     "answer": "Te ofrezco las siguientes opciones:\n👉 Escribe *membresias* para ver nuestras membresías\n👉 Escribe *servicios* para ver los entrenamientos y clases disponibles\n👉 Escribe *turnos* para ver los horarios disponibles",
     "options": {
       "media": null,
@@ -40,7 +39,7 @@
       "ref": null,
       "nested": [
         {
-          "ref": "key_2a27f112-05d6-42fa-a366-26397ad5f39f",
+          "ref": "key_4ff9940f-b00a-46e5-80d1-126cb79f0f12",
           "keyword": [
             "suscribirme"
           ],
@@ -51,8 +50,8 @@
           "refSerialize": "2659715196dd47a17fc9d433c7c5b868"
         },
         {
-          "ref": "ans_3c1f7104-2c19-4920-b82d-88e1db948b83",
-          "keyword": "key_2a27f112-05d6-42fa-a366-26397ad5f39f",
+          "ref": "ans_79384a84-a922-45b8-bccc-1b65b1b99a3d",
+          "keyword": "key_4ff9940f-b00a-46e5-80d1-126cb79f0f12",
           "answer": "¡Hola! 😄 Vamos a iniciar tu suscripción.\nPor favor, indícame tu nombre completo.",
           "options": {
             "media": null,
@@ -66,11 +65,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "16a84df9efae5fbccb862e288d3123b5"
+          "refSerialize": "f66a2a183c70a8655be44b2a7a6f8086"
         },
         {
-          "ref": "ans_8f1b7309-2694-4da9-8e72-fe6baf9d6840",
-          "keyword": "ans_3c1f7104-2c19-4920-b82d-88e1db948b83",
+          "ref": "ans_d7629601-b5db-4664-aa05-42047cbe8e84",
+          "keyword": "ans_79384a84-a922-45b8-bccc-1b65b1b99a3d",
           "answer": "¿Tienes un correo electrónico que quieras proporcionar? (opcional)",
           "options": {
             "media": null,
@@ -84,11 +83,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "f0f4f027b93efa1406170eb536d3e262"
+          "refSerialize": "80ad380ff14104e25450adeef48cc108"
         },
         {
-          "ref": "ans_9ee5a3dd-9631-4838-be3e-b23379919940",
-          "keyword": "ans_8f1b7309-2694-4da9-8e72-fe6baf9d6840",
+          "ref": "ans_4f5363f3-8c11-496f-945a-0ec07440261a",
+          "keyword": "ans_d7629601-b5db-4664-aa05-42047cbe8e84",
           "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
           "options": {
             "media": null,
@@ -102,11 +101,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "00154d272ea2a3211945ed6428376764"
+          "refSerialize": "3caa9b73fb3ee69cb01ff5c699c0b273"
         },
         {
-          "ref": "ans_e3fb7e78-1573-4dcb-9737-e7d457feb0c5",
-          "keyword": "ans_9ee5a3dd-9631-4838-be3e-b23379919940",
+          "ref": "ans_26f03317-0d24-4c28-aba1-bc42a5abb0f5",
+          "keyword": "ans_4f5363f3-8c11-496f-945a-0ec07440261a",
           "answer": "Responde con el número de la membresía que deseas.",
           "options": {
             "media": null,
@@ -120,11 +119,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "e9cda73e881130736f1d781696d4a9e7"
+          "refSerialize": "fbae085f0c959b77b2373bb553758da6"
         },
         {
-          "ref": "ans_7cfbbf3e-2df8-4e01-bd4c-b56125d3854b",
-          "keyword": "ans_e3fb7e78-1573-4dcb-9737-e7d457feb0c5",
+          "ref": "ans_d30baf47-4e4d-4b01-980a-b45cd51d067a",
+          "keyword": "ans_26f03317-0d24-4c28-aba1-bc42a5abb0f5",
           "answer": "Envía una imagen del comprobante de pago.",
           "options": {
             "media": null,
@@ -138,11 +137,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "ef1b4dccb59d8b8748f19742ffebf54c"
+          "refSerialize": "cd404e2941dbb005cdd330ee19329faa"
         },
         {
-          "ref": "ans_c404314b-a0f2-48b2-95c8-86ca91cf2934",
-          "keyword": "ans_7cfbbf3e-2df8-4e01-bd4c-b56125d3854b",
+          "ref": "ans_b603572b-f927-44b5-ae33-09a2650d57fe",
+          "keyword": "ans_d30baf47-4e4d-4b01-980a-b45cd51d067a",
           "answer": "🎉 ¡Gracias por tu suscripción!",
           "options": {
             "media": null,
@@ -156,10 +155,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "812070e8fe1be22b5b130a7698cc9f6d"
+          "refSerialize": "d5fbab8f7b8b25ed27f5620559a4d86a"
         },
         {
-          "ref": "key_184843f1-7dc7-415a-a444-00c1a29bfb4e",
+          "ref": "key_1558f13a-477d-4bdb-bca6-6159fdab9e28",
           "keyword": [
             "membresia",
             "membresías",
@@ -172,8 +171,8 @@
           "refSerialize": "c4251e765e297108354639ebd906c049"
         },
         {
-          "ref": "ans_41b80dca-9410-42d8-8d88-3d657adcf77b",
-          "keyword": "key_184843f1-7dc7-415a-a444-00c1a29bfb4e",
+          "ref": "ans_1e05f0e9-839d-4d5c-a696-fe8aac1e9f3f",
+          "keyword": "key_1558f13a-477d-4bdb-bca6-6159fdab9e28",
           "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
           "options": {
             "media": null,
@@ -187,10 +186,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "5ac9b776725142968162155acedbc5cd"
+          "refSerialize": "181892e6f38d204297cdf463b1ac53ca"
         },
         {
-          "ref": "key_8a64310f-32c7-4f06-95f9-7e4f50d26c20",
+          "ref": "key_470ef2c3-346c-446c-83ff-7bbaf2a31225",
           "keyword": [
             "servicios",
             "entrenamientos",
@@ -203,8 +202,8 @@
           "refSerialize": "0fccc84f5e876ce9e810219bedab987c"
         },
         {
-          "ref": "ans_2fa4b5cc-8263-41cc-904c-520b9d5bc25f",
-          "keyword": "key_8a64310f-32c7-4f06-95f9-7e4f50d26c20",
+          "ref": "ans_af7b1988-8895-4a30-b6ad-9c0fd2779d7f",
+          "keyword": "key_470ef2c3-346c-446c-83ff-7bbaf2a31225",
           "answer": "🏋️ Estamos obteniendo nuestros servicios, un momento...",
           "options": {
             "media": null,
@@ -218,10 +217,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "a0455404e373f35dc39826a3d6e953b4"
+          "refSerialize": "68bf5ad8815639a866a6575fd262fc4d"
         },
         {
-          "ref": "key_666015ac-d0e2-4e38-b8a9-1c3cb178fac6",
+          "ref": "key_c715984f-2bed-4abd-be67-5b0d4755f242",
           "keyword": [
             "turnos",
             "horarios",
@@ -234,8 +233,8 @@
           "refSerialize": "458a796159c05984f616f0f89b358d87"
         },
         {
-          "ref": "ans_f7b0e3f3-0138-4161-b902-0e54d1c72245",
-          "keyword": "key_666015ac-d0e2-4e38-b8a9-1c3cb178fac6",
+          "ref": "ans_457d2b1b-a5f4-4b3e-bb97-3306094219d0",
+          "keyword": "key_c715984f-2bed-4abd-be67-5b0d4755f242",
           "answer": "🕑 Estamos obteniendo los turnos disponibles, un momento...",
           "options": {
             "media": null,
@@ -249,10 +248,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "fe319fe9b9731bb96704336267e6bc64"
+          "refSerialize": "a302da72b88f032337143df4b2865215"
         },
         {
-          "ref": "key_59546b62-fa2d-4014-b97e-94806f480972",
+          "ref": "key_067ee505-2966-4f57-a2f1-7b5f608d35c1",
           "keyword": [
             "cerrar",
             "logout"
@@ -264,8 +263,8 @@
           "refSerialize": "6f2b3b3d3e4af536564262656a45a26c"
         },
         {
-          "ref": "ans_f5544991-8bb3-46a7-84e0-66163e56b851",
-          "keyword": "key_59546b62-fa2d-4014-b97e-94806f480972",
+          "ref": "ans_5ac57acc-9fb8-4240-aad9-4557c928124b",
+          "keyword": "key_067ee505-2966-4f57-a2f1-7b5f608d35c1",
           "answer": "Si deseas cerrar sesión y registrar otro participante, escribe *logout*.",
           "options": {
             "media": null,
@@ -279,10 +278,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "a48b1d7415788958a0d63b0f2ee46289"
+          "refSerialize": "6a00627622567f0df2fad855da94dbdb"
         },
         {
-          "ref": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+          "ref": "key_0ade8896-b0ce-4744-a834-6b84a4f864f5",
           "keyword": [
             "reservar turno",
             "reservar",
@@ -295,8 +294,8 @@
           "refSerialize": "a77c8fec9a9729c5a5296c0f2612c5ee"
         },
         {
-          "ref": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
-          "keyword": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+          "ref": "ans_53e91817-4831-4fdf-b07e-124396fa47a9",
+          "keyword": "key_0ade8896-b0ce-4744-a834-6b84a4f864f5",
           "answer": "🔒 Primero verificaré si estás logueado...",
           "options": {
             "media": null,
@@ -310,11 +309,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "3bb551a738fda4679f319fc9c3d5f1c6"
+          "refSerialize": "978a9f37485dc9066f9b0e778eead856"
         },
         {
-          "ref": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
-          "keyword": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+          "ref": "ans_aacce0cc-e296-4bb8-b4d9-fff71aa3f2f7",
+          "keyword": "ans_53e91817-4831-4fdf-b07e-124396fa47a9",
           "answer": "Por favor, responde con el número del turno que deseas reservar.",
           "options": {
             "media": null,
@@ -328,11 +327,11 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "773b7ae2bffddb131e695e2f59441dbf"
+          "refSerialize": "ead6fa90bdae98dc9bdbcc2299eaef3d"
         },
         {
-          "ref": "ans_f2880945-224c-4742-ac2b-acfa6514d149",
-          "keyword": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
+          "ref": "ans_285f5e74-5a87-49ee-900d-791cce5fad95",
+          "keyword": "ans_aacce0cc-e296-4bb8-b4d9-fff71aa3f2f7",
           "answer": "Si deseas cancelar tu turno o hacer otro cambio, por favor avísame.",
           "options": {
             "media": null,
@@ -346,26 +345,250 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "67c36ae55dbfe8ed87719ea57ab3bc95"
+          "refSerialize": "d3273069f3311a88fdce2ccb06fc342f"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "1f24c5734427769899ffe711617b62c9",
+    "refSerialize": "5ed6ad0ab4f4ac38f76c80595bb4105a",
     "from": "51964994415"
   },
   {
-    "ref": "ae5fa2d3-1d5f-4615-83cc-bf89685a04e7",
-    "keyword": "1f24c5734427769899ffe711617b62c9",
-    "answer": "quiero reservar un turno",
+    "ref": "616af7aa-fb96-4633-a8d0-014d2f87173a",
+    "keyword": "5ed6ad0ab4f4ac38f76c80595bb4105a",
+    "answer": "quiero suscribirme",
     "options": {},
     "from": "51964994415",
-    "refSerialize": "33e55ff07a387c86b9c8659470a65f30"
+    "refSerialize": "4f15ba1121e413bf07ebc55c825101bf"
   },
   {
-    "ref": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
-    "keyword": "key_5f5a57e1-9049-4a76-ad88-fbd4c6b88a08",
+    "ref": "ans_79384a84-a922-45b8-bccc-1b65b1b99a3d",
+    "keyword": "key_4ff9940f-b00a-46e5-80d1-126cb79f0f12",
+    "answer": "¡Hola! 😄 Vamos a iniciar tu suscripción.\nPor favor, indícame tu nombre completo.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "f66a2a183c70a8655be44b2a7a6f8086",
+    "from": "51964994415"
+  },
+  {
+    "ref": "a87e215c-ab06-4203-bdd6-ca15ee666844",
+    "keyword": "f66a2a183c70a8655be44b2a7a6f8086",
+    "answer": "carlos",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "8a4ba62ebd292d79a1f39504499c3f2a"
+  },
+  {
+    "ref": "01510a4f-d811-4f8c-a2d1-cbd5675d7d67",
+    "keyword": null,
+    "answer": "Encantado *carlos*, continuemos...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "5d7d0c23556b638de61b90bf3d83dd14"
+  },
+  {
+    "ref": "ans_d7629601-b5db-4664-aa05-42047cbe8e84",
+    "keyword": "ans_79384a84-a922-45b8-bccc-1b65b1b99a3d",
+    "answer": "¿Tienes un correo electrónico que quieras proporcionar? (opcional)",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "80ad380ff14104e25450adeef48cc108",
+    "from": "51964994415"
+  },
+  {
+    "ref": "46a5ef03-ee3d-4513-8b71-e3ca79f164b3",
+    "keyword": "80ad380ff14104e25450adeef48cc108",
+    "answer": "csramosflores@gmail.com",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "0ca63e9a978f78be128922aee18f038f"
+  },
+  {
+    "ref": "a0ee863d-f60b-4bb5-9dd9-644ac87ca207",
+    "keyword": null,
+    "answer": "Un momento, estamos obteniendo nuestras membresías disponibles...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "b5d85b306c6985001829bcabedc44134"
+  },
+  {
+    "ref": "ans_4f5363f3-8c11-496f-945a-0ec07440261a",
+    "keyword": "ans_d7629601-b5db-4664-aa05-42047cbe8e84",
+    "answer": "💪 Estamos obteniendo nuestras membresías, un momento...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "3caa9b73fb3ee69cb01ff5c699c0b273",
+    "from": "51964994415"
+  },
+  {
+    "ref": "ff93cd24-675d-439a-abeb-6c2662f5da1d",
+    "keyword": null,
+    "answer": "💪 Aquí están nuestras membresías disponibles:\n1. Trimestral - S/250\n2. Anual:  - S/1000\n3. Mensual:  - S/90\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "c58daaf32239063b3b06abcc21466509"
+  },
+  {
+    "ref": "ans_26f03317-0d24-4c28-aba1-bc42a5abb0f5",
+    "keyword": "ans_4f5363f3-8c11-496f-945a-0ec07440261a",
+    "answer": "Responde con el número de la membresía que deseas.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "fbae085f0c959b77b2373bb553758da6",
+    "from": "51964994415"
+  },
+  {
+    "ref": "30ed6422-bee5-43ec-b7cd-916419b8526e",
+    "keyword": "fbae085f0c959b77b2373bb553758da6",
+    "answer": "1",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "a4045793-3977-4674-88a4-4bccdf15354f",
+    "keyword": null,
+    "answer": "Has seleccionado la membresía *Trimestral* por S/250. Envíame una foto del comprobante de pago.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "13bd1ba7d54b57def8f802220e1a694d"
+  },
+  {
+    "ref": "ans_d30baf47-4e4d-4b01-980a-b45cd51d067a",
+    "keyword": "ans_26f03317-0d24-4c28-aba1-bc42a5abb0f5",
+    "answer": "Envía una imagen del comprobante de pago.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "cd404e2941dbb005cdd330ee19329faa",
+    "from": "51964994415"
+  },
+  {
+    "ref": "c2fa749e-8334-4aa9-8130-f7757de26b3a",
+    "keyword": "cd404e2941dbb005cdd330ee19329faa",
+    "answer": "_event_media__cda06b6e-d746-4dcb-a06d-3b7196916003",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "cf705674088674af54c906198e2f8b4c"
+  },
+  {
+    "ref": "c726717b-1187-4e78-8db4-ff62f8c8b0e3",
+    "keyword": null,
+    "answer": "Estamos procesando el pago.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "02382ec64170a3f6632e42e9c6ab88ca"
+  },
+  {
+    "ref": "ans_b603572b-f927-44b5-ae33-09a2650d57fe",
+    "keyword": "ans_d30baf47-4e4d-4b01-980a-b45cd51d067a",
+    "answer": "🎉 ¡Gracias por tu suscripción!",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "d5fbab8f7b8b25ed27f5620559a4d86a",
+    "from": "51964994415"
+  },
+  {
+    "ref": "418b8608-afc3-4a58-82f9-7e54f8b87d06",
+    "keyword": null,
+    "answer": "Ahora, vamos a reservar tu turno. Te mostraré los turnos disponibles... ",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "183ec6897ae217a9a0f5f55ba5f1f4f4"
+  },
+  {
+    "ref": "ans_53e91817-4831-4fdf-b07e-124396fa47a9",
+    "keyword": "key_0ade8896-b0ce-4744-a834-6b84a4f864f5",
     "answer": "🔒 Primero verificaré si estás logueado...",
     "options": {
       "media": null,
@@ -379,38 +602,11 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "3bb551a738fda4679f319fc9c3d5f1c6",
     "from": "51964994415"
   },
   {
-    "ref": "8ee351e2-e6c1-4b74-b120-f11bef1c4327",
-    "keyword": null,
-    "answer": "🕑 Estos son los turnos disponibles:\n1. martes - Disponibilidad: 6:00 am - 11:00 pm\n2. jueves - Disponibilidad: 6:00 am - 11:00 pm\n3. domingo - Disponibilidad: 8:00 am - 3:00 pm\n4. miercoles - Disponibilidad: 6:00 am - 11:00 pm\n5. sábado - Disponibilidad: 8:00 am - 6:00 pm\n6. viernes - Disponibilidad: 6:00 am - 11:00 pm\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "d0fdb54546a14fd2928e96cdfa7bba50"
-  },
-  {
-    "ref": "3deef3ed-4186-49db-8f03-40098d81046a",
-    "keyword": null,
-    "answer": "Responde con el número del turno que deseas reservar.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "51964994415",
-    "refSerialize": "19deee5198cb7baa3405be6b8c0efed1"
-  },
-  {
-    "ref": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
-    "keyword": "ans_d440977f-2a97-4d5c-adcb-79ee85edd3c3",
+    "ref": "ans_aacce0cc-e296-4bb8-b4d9-fff71aa3f2f7",
+    "keyword": "ans_53e91817-4831-4fdf-b07e-124396fa47a9",
     "answer": "Por favor, responde con el número del turno que deseas reservar.",
     "options": {
       "media": null,
@@ -424,21 +620,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "773b7ae2bffddb131e695e2f59441dbf",
     "from": "51964994415"
   },
   {
-    "ref": "855dfd0b-2892-45ac-95b1-bafcf0356f70",
-    "keyword": "773b7ae2bffddb131e695e2f59441dbf",
-    "answer": "4",
-    "options": {},
-    "from": "51964994415",
-    "refSerialize": "e8139b7fa2fbc1b48f247924f8ad1961"
-  },
-  {
-    "ref": "505b6d12-d3d1-4af9-a0cc-acb852b843ea",
+    "ref": "95b4d730-6123-4a46-ae02-02ad2f496f18",
     "keyword": null,
-    "answer": "🎉 ¡Has reservado el turno *miercoles a las 6:00 am - 11:00 pm*!",
+    "answer": "🕑 Estos son los turnos disponibles:\n1. martes - Disponibilidad: 6:00 am - 11:00 pm\n2. jueves - Disponibilidad: 6:00 am - 11:00 pm\n3. domingo - Disponibilidad: 8:00 am - 3:00 pm\n4. miercoles - Disponibilidad: 6:00 am - 11:00 pm\n5. sábado - Disponibilidad: 8:00 am - 6:00 pm\n6. viernes - Disponibilidad: 6:00 am - 11:00 pm\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -446,25 +633,39 @@
       "delay": 0
     },
     "from": "51964994415",
-    "refSerialize": "ad8706324c6086eee3db2d77545a468e"
+    "refSerialize": "d0fdb54546a14fd2928e96cdfa7bba50"
   },
   {
-    "ref": "ans_f2880945-224c-4742-ac2b-acfa6514d149",
-    "keyword": "ans_d9b37417-2557-4a0b-a2d0-eec327fd371b",
-    "answer": "Si deseas cancelar tu turno o hacer otro cambio, por favor avísame.",
+    "ref": "85c4c4f1-142b-4f82-a573-cb488b9fb274",
+    "keyword": null,
+    "answer": "Responde con el número del turno que deseas reservar.",
     "options": {
       "media": null,
       "buttons": [],
       "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
+      "delay": 0
     },
-    "refSerialize": "67c36ae55dbfe8ed87719ea57ab3bc95",
-    "from": "51964994415"
+    "from": "51964994415",
+    "refSerialize": "19deee5198cb7baa3405be6b8c0efed1"
+  },
+  {
+    "ref": "ffd33712-ac62-489a-9161-f8089aa7eada",
+    "answer": "2",
+    "options": {},
+    "from": "51964994415",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "204490a9-2f08-4cd0-a34e-11a7f366d391",
+    "keyword": null,
+    "answer": "🎉 ¡Has reservado el turno *jueves a las 6:00 am - 11:00 pm*!",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51964994415",
+    "refSerialize": "acd115ef4476a069d814fd850c9bf3b7"
   }
 ]

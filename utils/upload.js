@@ -3,11 +3,10 @@ const s3 = new AWS.S3();
 
 const subirImagenAS3 = async (imageBuffer, imageName) => {
     const params = {
-        Bucket: 'tu-bucket', // Cambia por tu bucket de S3
+        Bucket: process.env.AWS_S3_BUCKET, // Cambia por tu bucket de S3
         Key: imageName,
         Body: imageBuffer,
         ContentType: 'image/jpeg', // Ajusta según el tipo de imagen
-        ACL: 'public-read', // Hace la imagen accesible públicamente
     };
 
     try {

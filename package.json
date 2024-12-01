@@ -17,6 +17,7 @@
         "@bot-whatsapp/provider": "latest",
         "@whiskeysockets/baileys": "6.5.0",
         "aws-sdk": "^2.1692.0",
+        "axios": "^1.7.8",
         "cache-manager": "5.2.4",
         "dotenv": "^16.4.5",
         "firebase": "^10.13.1",

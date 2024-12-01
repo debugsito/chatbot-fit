@@ -2,7 +2,8 @@ const { addKeyword } = require('@bot-whatsapp/bot');
 const { collection, getDocs, addDoc } = require('firebase/firestore');
 const { db } = require('../config/firebase');
 const { guardarSesion, obtenerSesion } = require('../utils/sesion'); // Asegúrate de que la ruta sea correcta
-const { subirImagenAS3 } = require('../utils/upload'); // Asegúrate de que la ruta sea correcta
+const { subirImagenAS3 } = require('../utils/upload');
+const {downloadMediaMessage} = require("@whiskeysockets/baileys"); // Asegúrate de que la ruta sea correcta
 
 // Flujo de suscripción
 const suscripcionFlow = addKeyword(['suscribirme'])
@@ -103,12 +104,12 @@ const suscripcionFlow = addKeyword(['suscribirme'])
         async (ctx, { flowDynamic, endFlow }) => {
             // Recuperamos la sesión desde Firestore
             let sessionData = await obtenerSesion(ctx.from);
-
-            const imageBuffer = ctx.media; // Suponiendo que `ctx.media` contiene la imagen enviada
+            await flowDynamic(`Estamos procesando el pago.`);
+            const imageBuffer = await downloadMediaMessage(ctx,'buffer',{})
             const imageName = `comprobante_${ctx.from}_${Date.now()}.jpg`; // Nombre único para la imagen
 
             try {
-                //const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
+                const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
 
                 sessionData.comprobante = imageName; // Guardamos la URL de la imagen en la sesión
 
@@ -118,7 +119,7 @@ const suscripcionFlow = addKeyword(['suscribirme'])
                     correo: sessionData.correo || '',
                     telefono: ctx.from, // Tomamos el teléfono de ctx.from
                     membresia: sessionData.membresia,
-                    imagenUrl: imageName,
+                    imagenUrl: imagenUrl,
                     fecha: new Date(),
                 };
 
