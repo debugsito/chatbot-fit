@@ -4,6 +4,8 @@ const membresiasFlow = require('./membresiasFlow');
 const serviciosFlow = require('./serviciosFlow');
 const turnosFlow = require('./turnosFlow');
 const docsFlow = require('./docsFlow');
+const suscripcionFlow = require('./suscripcionFlow');
+
 
 const principalFlow = addKeyword(['hola', 'inicio', 'empezar'])
     .addAnswer('🙌 ¡Hola! Bienvenido a *FitCloud Assistant*')
@@ -16,7 +18,7 @@ const principalFlow = addKeyword(['hola', 'inicio', 'empezar'])
         ],
         null,
         null,
-        [membresiasFlow, serviciosFlow, turnosFlow, docsFlow]
+        [suscripcionFlow, membresiasFlow, serviciosFlow, turnosFlow, docsFlow]
     );
 
 module.exports = principalFlow;
