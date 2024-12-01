@@ -108,8 +108,8 @@ const suscripcionFlow = addKeyword(['suscribirme'])
             const imageName = `comprobante_${ctx.from}_${Date.now()}.jpg`; // Nombre único para la imagen
 
             try {
-                const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
-                sessionData.comprobante = imagenUrl; // Guardamos la URL de la imagen en la sesión
+                //const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
+                sessionData.comprobante = imageName; // Guardamos la URL de la imagen en la sesión
 
                 // Guardamos la suscripción en Firestore
                 const suscripcionData = {
@@ -117,7 +117,7 @@ const suscripcionFlow = addKeyword(['suscribirme'])
                     correo: sessionData.correo || '',
                     telefono: ctx.from, // Tomamos el teléfono de ctx.from
                     membresia: sessionData.membresia,
-                    imagenUrl: imagenUrl,
+                    imagenUrl: imageName,
                     fecha: new Date(),
                 };
 
