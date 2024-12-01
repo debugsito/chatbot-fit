@@ -138,7 +138,7 @@ const suscripcionFlow = addKeyword(['suscribirme'])
             sessionData.isLoggedIn = true;
             await guardarSesion(ctx.from, sessionData); // Guardamos la sesión actualizada
 
-            await flowDynamic('Ahora, vamos a reservar tu turno. Te mostraré los turnos disponibles...');
+            await flowDynamic('Ahora, vamos a reservar tu turno. Te mostraré los turnos disponibles... ');
             return gotoFlow(require('./reservaTurnoFlow'))
         }
     );
