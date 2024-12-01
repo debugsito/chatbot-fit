@@ -109,6 +109,7 @@ const suscripcionFlow = addKeyword(['suscribirme'])
 
             try {
                 //const imagenUrl = await subirImagenAS3(imageBuffer, imageName); // Subimos la imagen a S3
+
                 sessionData.comprobante = imageName; // Guardamos la URL de la imagen en la sesión
 
                 // Guardamos la suscripción en Firestore
